@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+	{{ super() }}
+	{{ moment.include_moment() }}
+{% endblock %}
+
+{% block page_content %}
+<div class="container">
+	<div class="page-header">
+       	Glitnir - Forseti Discovery Visualization.
+	</div>
+
+    <form method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        {{ form.file }}
+        <input type="submit">
+    </form>
+
+{% endblock %}
