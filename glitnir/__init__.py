@@ -11,7 +11,4 @@ app = Flask(__name__)
 app.config.from_object(Config)
 app.env = Config.ENV
 
-from glitnir import views, model
-
-#model.load_model()
-
+from glitnir import views

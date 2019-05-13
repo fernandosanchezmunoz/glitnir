@@ -11,7 +11,6 @@ logger = logging.getLogger(Config.APP_NAME)
 import os, io, json
 from datetime import datetime
 from socket import gethostname
-from PIL import Image
 from flask import \
 request,redirect,render_template, url_for, flash, jsonify, g
 
